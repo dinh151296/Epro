@@ -1,0 +1,236 @@
+/* ============common style============ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    transition: 0.2s;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    transition: .2s;
+}
+
+p,
+span,
+ul,
+li,
+a,
+div,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+}
+
+input {
+    line-height: normal;
+}
+
+label,
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+label:focus,
+button:focus {
+    outline: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+.container-header {
+    max-width: 1270px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+:root {
+    --color-blue-main : #034567;
+    --color-blue-02 : #6C93A7;
+    --color-blue-03 : #75ABC6;
+    --color-blue-04 : #356CD6;
+    --color-orange : #F5AC3D;
+    --color-red-light: #EF8686;
+    --text-color : #333333;
+}
+
+/* ====css header==== */
+header {
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    background-color: #fff;
+}
+
+.header__inner  {
+    padding: 20px 0px;
+}
+
+.header__logo {
+    max-width: 130px;
+    margin-right: 6.8%;
+}
+
+.header__content {
+    flex: 1;
+}
+
+.header__search {
+    position: relative;
+}
+
+.header__search .form-control {
+    width: 400px;
+    padding: 8.5px 12px;
+    border: 1px solid #26255147;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+}
+
+.header__search .form-control::placeholder {
+    color: #BCBCBC;
+    font-size: 13px;
+}
+
+.header__search button {
+    position: absolute;
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.header__search button img {
+    max-width: 24px;
+}
+
+.header__login {
+    margin-left: 40px;
+}
+
+.main-menu li:not(:first-child) {
+    margin-left: 40px;
+}
+
+.main-menu li a {
+    color: var(--color-blue-main);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 0px;
+    position: relative;
+}
+
+.main-menu li a:hover::after {
+    transform: scale(1);
+}
+
+.main-menu li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2.1px;
+    background-color: var(--color-blue-main);
+    bottom: 0px;
+    left: 0px;
+    transition: 0.2s;
+    transform: scale(0);
+}
+
+
+/* ====css header==== */
+
+.btn-site {
+    background-color: var(--color-blue-main);
+    font-size: 16px;
+    color: #fff;
+    border-radius: 14px;
+    font-weight: 600;
+    padding: 12px;
+    border: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-site::before {
+    position: absolute;
+    content: "";
+    width: 16%;
+    height: 140%;
+    background-color: rgba(255, 255, 255, 0.403);
+    box-shadow: 0px 0px 20px 0px rgb(255 255 255);
+    left: -50%;
+    top: 50%;
+    transition: 0.5s;
+    transform: translateY(-50%) rotate(15deg);
+}
+
+.btn-site:hover::before {
+    left: 120%;
+}
+
+.btn-site:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.header__login .btn-site {
+    font-weight: 700;
+    border-radius: 40px;
+    padding: 4px 23px;
+}

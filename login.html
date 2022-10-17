@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/style/bootstrap.min.css" type="text/css">
+    <!-- bootstrap -->
+
+    <link rel="stylesheet" href="assets/style/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/style/responsive.css" type="text/css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container-header">
+            <div class="header__inner d-flex align-items-center justify-content-between">
+                <div class="header__logo">
+                    <a href="">
+                        <img src="./assets/image/logo-header.png" alt="epro">
+                    </a>
+                </div>
+                <div class="header__content d-flex align-items-center justify-content-between">
+                    <div class="header__search">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm đề thi">
+                        <button type="button">
+                            <img src="./assets/image/search.svg" alt="">
+                        </button>
+                    </div>
+                    <nav class="header__nav  d-flex align-items-center justify-content-between">
+                        <ul class="main-menu d-flex align-items-center">
+                            <li>
+                                <a href="">Đề thi</a>
+                            </li>
+                            <li>
+                                <a href="">Tài liệu</a>
+                            </li>
+                            <li>
+                                <a href="">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="">Khóa học</a>
+                            </li>
+                        </ul>
+                        <div class="header__login">
+                            <a href="" class="btn btn-site">Đăng nhập</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="login-page__content d-flex">
+            <div class="login-page__img">
+                <img src="./assets/image/login-bg.jpg" alt="login-page">
+            </div>
+            <div class="wrap__login-form">
+                <div class="login__box">
+                    <h2>Đăng nhập</h2>
+                    <div class="form-group mb-4">
+                        <label for="Email">Email</label>
+                        <input id="Email" type="text" class="form-control" placeholder="Nhập email của bạn">
+                    </div>
+                    <div class="form-group mb-0">
+                        <label for="pass">Mật khẩu</label>
+                        <input id="pass" type="text" class="form-control" placeholder="Nhập mật khẩu của bạn">
+                        <button>
+                            <img src="./assets/image/eye.png" alt="">
+                        </button>
+                    </div>
+                    <div class="forgot-pass">
+                        <a href="">Quên mật khẩu</a>
+                    </div>
+                    <button type="submit" class="login__form-submit">Đăng nhập</button>
+                    <p>Hoặc đăng nhập với</p>
+                    <div class="login-other d-flex align-items-center">
+                        <button>
+                            <img src="./assets/image/Google__G.png" alt="">
+                            Google
+                        </button>
+                        <button>
+                            <img src="./assets/image/logos_facebook.png" alt="">
+                            Facebook
+                        </button>
+                    </div>
+                </div>
+                <div class="register">
+                    Bạn chưa có tài khoản? <a href="">Đăng kí ngay</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
