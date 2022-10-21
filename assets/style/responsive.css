@@ -203,6 +203,7 @@
     .login-page__content {
         position: relative;
         height: auto;
+        min-height: 600px;
     }
     .login-page__img {
         position: absolute;
