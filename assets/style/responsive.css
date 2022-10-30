@@ -1,14 +1,17 @@
 /* =======Responsive style for site======= */
 @media only  screen and (max-width: 1200px) {
-    .header__logo {
-        margin-right: 6.8%;
-    }
     .main-menu li:not(:first-child),
     .header__login {
-        margin-left: 28px;
+        margin-left: 15px;
     }
     .header__search .form-control {
-        width: 320px;
+        width: 260px;
+    }
+    .header__logo img {
+        width: 106px;
+    }
+    .footer__right {
+        padding-left: 0px;
     }
 }
 
@@ -203,6 +206,7 @@
     .login-page__content {
         position: relative;
         height: auto;
+        min-height: unset;
     }
     .login-page__img {
         position: absolute;
@@ -212,7 +216,7 @@
     .wrap__login-form {
         position: relative;
         align-items: flex-end;
-        padding: 50px 50px;
+        padding: 60px 60px;
     }
     .login-page__img img {
         max-width: 500px;
@@ -228,6 +232,7 @@
 @media only  screen and (max-width: 991px) {
     .footer__right {
         padding-left: 0px;
+        justify-content: flex-start !important;
     }
 }
 
@@ -259,6 +264,16 @@
     .login-page__img img {
         max-width: 400px;
     }
+    .footer__right {
+        gap: 30px;
+        row-gap: 0px;
+    }
+    .footer__block:not(:first-child) {
+        margin-left: 0px;
+    } 
+    .social__list {
+        flex-direction: row;
+    }
 }
 
 @media only  screen and (max-width: 479px) {
@@ -280,7 +295,8 @@
         padding-right: 20px;
         align-items: center;
     }
-    .login__box {
+    .login__box,
+    .login__box.register__box {
         width: 100%;
         padding: 36px 20px;
     }
@@ -296,6 +312,10 @@
     }
     .mobile-hambuger__close {
         left: -47px;
+    }
+    .footer__block.social {
+        flex: 1;
+        justify-content: center;
     }
 }
 
