@@ -626,3 +626,234 @@ footer {
 .navigation__link img {
     width: auto;
 }
+
+.title__section {
+    margin-bottom: 36px;
+    row-gap: 10px;
+}
+
+.title__section  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-blue-main);
+}
+
+.title__section a {
+    font-size: 16px;
+    color: var(--color-blue-main);
+}
+
+.english-test__item {
+    position: relative;
+    transition: 0.2s;
+    margin-bottom: 30px;
+}
+
+.english-test__item .desc {
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
+    background-color: #fff;
+    padding: 15px 25px 15px 25px;
+    border-radius: 0px 0px 16px 16px;
+}
+
+.english-test__item:hover .desc {
+    box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 30%);
+}
+
+.english-test__item .thumb {
+    border-radius: 16px 16px 0px 0px;
+    overflow: hidden;
+}
+
+.english-test__item .thumb img {
+    height: 170px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+    transition: 0.4s;
+}
+
+.english-test__item .thumb a:hover {
+    opacity: 1;
+}
+
+.english-test__item .thumb:hover img {
+    transform: scale(1.1);
+}
+
+.english-test__item .desc h3 a {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    padding-bottom: 5px;
+}
+
+.english-test__item .desc h3 a:hover {
+    color: var(--color-orange);
+    opacity: 1;
+}
+
+.english-test__info {
+    font-size: 14px;
+    color: #848484;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 5px;
+}
+
+.english-test__info img {
+    max-width: 15px;
+}
+
+.english-test__item .desc p {
+    font-size: 14px;
+    color: #333333;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    border-top: 1px solid #DEE6EA;
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wrap__button-test {
+    padding-bottom: 16px;
+    row-gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrap__button-test .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 7px;
+    color: #7C7C7C;
+    font-size: 16px;
+}
+
+.wrap__button-test .item button {
+    border: 0px;
+    outline: none;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.wrap__button-test .item button:hover {
+    background-color: transparent;
+}
+
+.wrap__button-test .item button  svg {
+    width: auto;
+}
+
+.button-test-bg-01 {
+    background-color: #5A6883;
+    border-color: #5A6883 !important;
+}
+
+.button-test-bg-01:hover svg path {
+    fill: #5A6883;
+}
+
+.button-test-bg-02 {
+    background-color: #98B8A3;
+    border-color: #98B8A3 !important;
+}
+
+.button-test-bg-02:hover svg path {
+    fill: #98B8A3;
+}
+
+.button-test-bg-03 {
+    background-color: #E5C47F;
+    border-color: #E5C47F !important;
+}
+
+.button-test-bg-03:hover svg path {
+    fill: #E5C47F;
+}
+
+.button-test-bg-04 {
+    background-color: #EF9994;
+    border-color: #EF9994 !important;
+}
+
+.button-test-bg-04:hover svg path {
+    fill: #EF9994;
+}
+
+.english-test__buttom {
+    padding-top: 10px;
+    border-top: 1px solid#DEE6EA;
+}
+
+.english__flee-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-blue-main);
+}
+
+.english__flee-link button {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+}
+
+.english__flee-link img {
+    max-width: 35px;
+}
+
+.english__status-buttom {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.status__the-test img {
+    max-width: 21px;
+}
+
+.status__the-test-save {
+    width: 25px;
+    height: 25px;
+    background-image: url(../image/css_sprites-heart.png);
+    background-position: -10px -55px;
+    background-repeat: no-repeat;
+}
+
+.status__the-test-save:hover {
+    width: 25px; 
+    height: 25px;
+    background-image: url(../image/css_sprites-heart.png); 
+    background-position: -10px -10px;
+}
+
+.status__the-test-save.active {
+    width: 25px; 
+    height: 25px;
+    background-image: url(../image/css_sprites-heart.png); 
+    background-position: -10px -10px;
+}
