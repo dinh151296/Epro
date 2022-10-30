@@ -527,6 +527,40 @@ footer {
     background-color: #E1F3FC;
 }
 
+.hero-home::after {
+    position: absolute;
+    content: "";
+    background-image: url(../image/icon-eyecatch-home-03.svg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0px;
+    top: 26px;
+    bottom: 47px;
+    width: 154px;
+} 
+
+.hero-home::before {
+    position: absolute;
+    content: "";
+    background-image: url(../image/icon-eyecatch-home-04.svg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 0px;
+    top: 137px;
+    bottom: 12px;
+    width: 129px;
+} 
+
+.hero-home .img__ab {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 60%;
+    max-width: 430px;
+}
+
 .hero-home__content {
     padding: 36px 0px 48px;
     text-align: center;
@@ -573,7 +607,7 @@ footer {
 
 .wrap-navigation  {
     overflow-x: auto;
-    margin: 20px 0px 48px;
+    margin: 20px 0px 30px;
     -webkit-box-shadow: 0px 4px 5px 1px rgb(0 0 0 / 25%);
     -moz-box-shadow: 0px 4px 5px 1px rgb(0 0 0 / 25%);
     box-shadow: 0px 4px 5px 1px rgb(0 0 0 / 25%);
@@ -641,12 +675,35 @@ footer {
 .title__section a {
     font-size: 16px;
     color: var(--color-blue-main);
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    white-space: nowrap;
+}
+
+.title__section a:hover img {
+    transform: translateX(4px);
+}
+
+.title__section a img {
+    max-width: 18px;
+}
+
+.english-test {
+    padding: 24px 0px 20px;
+}
+
+.english-test.--bg-blue {
+    background-color: #F3FBFF;
 }
 
 .english-test__item {
     position: relative;
     transition: 0.2s;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .english-test__item .desc {
@@ -654,6 +711,7 @@ footer {
     background-color: #fff;
     padding: 15px 25px 15px 25px;
     border-radius: 0px 0px 16px 16px;
+    flex: 1;
 }
 
 .english-test__item:hover .desc {
@@ -722,6 +780,10 @@ footer {
     margin-top: 10px;
     padding-top: 10px;
     margin-bottom: 10px;
+}
+
+.english-test__item.new__item .desc p  {
+    -webkit-line-clamp: 3;
 }
 
 .wrap__button-test {
@@ -799,6 +861,15 @@ footer {
 
 .button-test-bg-04:hover svg path {
     fill: #EF9994;
+}
+
+.button-test-bg-05 {
+    background-color: #8C6CA5;
+    border-color: #8C6CA5 !important;
+}
+
+.button-test-bg-05:hover svg path {
+    fill: #8C6CA5;
 }
 
 .english-test__buttom {
