@@ -606,21 +606,20 @@ footer {
 }
 
 .wrap-navigation  {
-    overflow-x: auto;
     margin: 20px 0px 30px;
+}
+
+.wrap-navigation ul.main-navigation {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 1rem 0px;
+    background-color: #fff;
+
     -webkit-box-shadow: 0px 4px 5px 1px rgb(0 0 0 / 25%);
     -moz-box-shadow: 0px 4px 5px 1px rgb(0 0 0 / 25%);
     box-shadow: 0px 4px 5px 1px rgb(0 0 0 / 25%);
     border-radius: 20px;
-}
-
-.wrap-navigation ul {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    overflow-x: auto;
-    padding: 1rem 0px;
-    background-color: #fff;
 }
 
 .navigation__link {
@@ -645,7 +644,7 @@ footer {
     opacity: 1;
 }
 
-.wrap-navigation ul li:not(:last-child) a::after {
+.main-navigation li:not(:last-child) a::after {
     position: absolute;
     content: "";
     width: 1px; 
@@ -659,6 +658,73 @@ footer {
 
 .navigation__link img {
     width: auto;
+}
+
+.wrap-navigation ul li {
+    position: relative;
+}
+
+.sub-navigation {
+    position: absolute;
+    width: auto;
+    height: auto;
+    border-radius: 7px;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 4px 12px;
+    min-width: 205px;
+    z-index: 10;
+
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.main-navigation li:hover .sub-navigation  {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub-navigation  li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-blue-main);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 10px;
+    white-space: nowrap;
+    border-bottom: 1px solid #EBEBEB;
+    position: relative;
+}
+
+.sub-navigation  li a img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sub-navigation  li a:hover img {
+    transform: translate(3px, -50%);
+}
+
+.sub-navigation  li:last-child a {
+    border-bottom: 0px;
+}
+
+.sub-navigation  li a::after {
+    position: static !important;
+}
+
+.sub-navigation  li a img {
+    max-width: 12px;
 }
 
 .title__section {
