@@ -1115,6 +1115,7 @@ h2.title-block {
     vertical-align: middle;
     padding-top: 8px;
     padding-bottom: 8px;
+    white-space: nowrap;
 }
 
 .table-bordered td, .table-bordered th {
@@ -1320,3 +1321,137 @@ h2.title-block {
     width: 100%;
 }
 
+.page__my-class {
+    background-color: #C0D6F5;
+    position: relative;
+}
+
+.page__my-class::after {
+    position: absolute;
+    content: "";
+    top: 11px;
+    bottom: 8px;
+    right: 1.5%;
+    width: 330px;
+    background-image: url(../image/data_informationv.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page__my-class::before {
+    position: absolute;
+    content: "";
+    left: 30px;
+    top: -30px;
+    width: 446px;
+    height: 446px;
+    background-image: url(../image/IconBusinessv.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inner__td-layout {
+    display: flex;
+    align-items: stretch;
+    gap: 13px;
+}
+
+.inner__td-layout .thumb img {
+    width: 188px;
+    height: 188px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.inner__td-layout .desc {
+    flex: 1;   
+    max-width: 306px;
+    text-align: left;
+}
+
+.inner__td-layout .desc h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.inner__td-layout .desc h4 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.inner__td-layout .desc p {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    margin: 8px 0px;
+}
+
+.inner__td-layout .desc .time {
+    font-size: 12px;
+    color: #D66161;
+    margin-bottom: 7px;
+}
+
+.table-site.table-class tbody td {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.teacher__avatar {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.teacher__avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-blue-main);
+}
+
+.teacher__avatar .teacher__name {
+    font-size: 12px;
+}
+
+.teacher__avatar .teacher__name span {
+    font-size: 14px;
+    font-weight: 600;
+    display: block !important;
+    padding-top: 0px !important;
+}
+
+.inner__td-layout button {
+    background-color: transparent;
+    padding: 0px 6px;
+}
+
+.table-class td {
+    border-bottom: 1px solid#D4D4D4;
+    border-top: 0px;
+}
+
+.table-class thead th {
+    border-top: 0px;
+}
+
+.table-class thead th:first-child {
+    border-radius: 8px 0px 0px 8px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.table-class thead th:last-child {
+    border-radius: 0px 8px 8px 0px;
+}
