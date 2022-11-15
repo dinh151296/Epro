@@ -97,9 +97,10 @@ button:focus {
 }
 
 .container-header {
-    max-width: 1270px;
-    padding: 0px 15px;
+    max-width: 1170px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
     transition: 0.2s;
 }
 
@@ -911,7 +912,7 @@ footer {
 
 .wrap__button-test {
     padding-bottom: 16px;
-    row-gap: 16px;
+    gap: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1253,6 +1254,12 @@ h2.title-block {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.over-all__box span {
+    font-size: 48px;
+    font-weight: 700;
+    color:#024567;
 }
 
 .eye-catch__page {
@@ -1785,3 +1792,212 @@ h2.title-block {
     width: 11px;
     height: 11px;
 }
+
+.eye-catch__page.page__profile {
+    background-image: url(../image/profile-bg.jpg);
+    height: 460px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-edit__bg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.profile-edit__bg .btn-site {
+    background-color: #81818178;
+    font-weight: 400;
+    border-radius: 14px;
+    gap: 8px;
+    padding: 8px 15px;
+}
+
+.profile__avatar {
+    width: 100%;
+    margin-top: -80px;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.profile__avatar .__avatar {
+    gap: 20px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile__avatar .__avatar > img {
+    border-radius: 50%;
+}
+
+.profile__avatar .__avatar .edit {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.696);
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.profile__avatar .__avatar .edit img {
+    width: auto;
+}
+
+.profile__avatar .__name {
+    padding-bottom: 23px;
+    position: relative;
+    padding-right: 40px;
+}
+
+.profile__avatar .__name p {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.profile__avatar .__name .name__edit {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    cursor: pointer;
+    background-color: #F9F9F9;
+    width: 25px;
+    height: 25px;
+    border-radius: 7px;
+    box-shadow: 0px 1px 1px 0px #00000040;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.profile__avatar .__name .name__edit:hover {
+    box-shadow: 0px 2px 2px 0px #00000040;
+}
+
+.profile__avatar .__name .name__edit img {
+    max-width: 19px;
+}
+
+.profile__avatar .__name span {
+    background-color: var(--color-orange);
+    color: #fff;
+    border-radius: 11px;
+    padding: 4px 13px;
+}
+
+.profile__avatar .__name span.profile {
+    background-color: var(--color-blue-main);
+}
+
+.profile__desc-box {
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px 0px #00000024;
+    border-radius: 25px;
+    padding: 20px 30px;
+    font-size: 14px;
+}
+
+.profile__desc-box h5 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.profile__scores {
+    background-color: #EDF9FF;
+    box-shadow: 1px 2px 4px 0px #00000040;
+    border-radius: 25px;
+    padding: 16px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profile__scores .wrap__over-all {
+    flex: 1;
+    text-align: center;
+    border-top: 0px;
+    padding: 0px 10px;
+}
+
+.profile__scores .wrap__button-test {
+    padding-bottom: 0px;
+}
+
+.profile__scores .wrap__over-all h3 {
+    font-size: 14px;
+}
+
+.profile__scores .wrap__over-all a {
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    color: #356CD6;
+    text-decoration: underline;
+}
+
+.profile__scores .wrap__over-all .over-all__box {
+    width: 70px;
+    height: 70px;
+}
+
+.profile__scores .wrap__over-all .over-all__box span {
+    font-size: 30px;
+}
+
+.profile-content {
+    margin-top: 50px;
+    border-top: 5px solid #acdcf5;
+}
+
+.profile__tabs {
+    padding: 32px 0px;
+    gap: 30px;
+}
+
+.profile__tabs li span {
+    font-size: 20px;
+    color: #75ABC6;
+    transition: 0.2s;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.profile__tabs li:hover span {
+    color: #034565;
+}
+
+.profile__tabs li.active span {
+    color: #034565;
+    text-decoration: underline;
+}
+
+.profile__test-number {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #6A6A6A;
+}
+
+.profile__test-number span {
+    background-color: #A5DFFD;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--color-blue-main);
+}
+
