@@ -377,9 +377,25 @@ header {
     font-weight: 400;
 }
 
+.form-control.alert-error {
+    border-color: #FD3939 !important;
+}
+
 .login__box .form-group .form-control::placeholder {
     color: #A4A4A4;
     font-weight: 400;
+}
+
+.login__box .form-group span.alert-error {
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+    font-size: 10px;
+    color: #FD3939;
+}
+
+.login__box .form-group span.alert-error img {
+    width: auto;
 }
 
 .login__box .form-group {
@@ -395,7 +411,10 @@ header {
     bottom: -3px;
     transform: translateY(-50%);
     max-width: 24px;
+}
 
+.login__box .form-group.alert-error .handle-show-pass {
+    bottom: 15px;
 }
 
 .login-other__text {
